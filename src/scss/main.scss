@@ -1,0 +1,47 @@
+//variables
+$text-color-dark:#373737;
+$text-color-light:#fff;
+$active-color:#ff9d00;
+
+body{
+background-color:fff;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+
+}
+
+//button
+.button{
+    font-size: 14px;
+    color: $text-color-light;
+    border: none;
+    border-radius: 5px;
+    background-color: $active-color;
+    padding: 15px 22px;
+}
+.button img {
+    vertical-align: middle;
+}
+
+
+//header
+.header{
+    background-color: rgba(110, 106, 106, 0.46);
+    margin-top: 59px;
+}
+.header-contacts{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-contacts__numbers{
+    font-size: 22px;
+    margin-right: 20px;
+    align-items: center;
+}
+.edge{
+    background-color: black;
+    width: 2px;
+    height: 30px;
+    margin-right: 20px;
+}
