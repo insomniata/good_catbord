@@ -47,7 +47,7 @@
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <div class="main-text">
                         <h1 class="main-text__title">Производство упаковки из гофрокартона</h1>
                         <div class="main-text__subtitle">с доставкой по всей России</div>
@@ -71,21 +71,34 @@
     </section>
     <div class="overlay">
         <div class="popup">
-            <div class="popup-title">Форма обратной связи</div>
-            <div class="popup-close">&times;</div>
+            <div class="popup-title">Форма обратной связи <span class="popup-close">&times;</span></div>
             <div class="popup-form">
-                <form action="#" class="main-form">
-                    <div class="form-title">Получите индивидуальное предложение <br>
-                       <span class="form-title__small"> на производство и поставку изделий </span></div>
-                       <div class="form-descr">Введите ваш номер телефона:</div>
+                <form action="#" class="popup-form">
+                    <div class="popup-form__title">Получите индивидуальное предложение <br>
+                       <span class="popup-form__title__small"> на производство и поставку изделий </span></div>
+                       <div class="popup-form__descr">Введите ваш номер телефона:</div>
                     <input class="popup-form__input" type="tel" name="tel" id="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-                    <button class="button form-button">Оставить заявку!</button>
-                    <div class="form-descr__small">*Минимальный заказ 500шт</div>
+                    <button class="button popup-form__button">Оставить заявку!</button>
+                    <div class="popup-form__descr__small">*Минимальный заказ 500шт</div>
                 </form>
             </div>
         </div>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.header-contacts__button').on("click", function(){
+                $('.overlay').show();
+
+            });
+            $('.popup-close').on("click", function(){
+                $('.overlay').hide();
+            });
+
+        });
+    </script>
 </body>
 
 </html>
